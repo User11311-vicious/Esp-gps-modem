@@ -75,6 +75,7 @@ while not internet:
         thread1.start()
         tim = threading.Timer(5.0, block_site)
         print('Reconnect')
+        
         tim.start()
         thread1.join()
         thread2.join()
